@@ -1,0 +1,35 @@
+postgresql 19:52:06.37
+postgresql 19:52:06.37 Welcome to the Bitnami postgresql container
+postgresql 19:52:06.38 Subscribe to project updates by watching https://github.com/bitnami/containers
+postgresql 19:52:06.38 Submit issues and feature requests at https://github.com/bitnami/containers/issues
+postgresql 19:52:06.41
+postgresql 19:52:06.62 INFO  ==> ** Starting PostgreSQL setup **
+postgresql 19:52:06.74 INFO  ==> Validating settings in POSTGRESQL_* env vars..
+postgresql 19:52:06.77 INFO  ==> Cleaning stale /bitnami/postgresql/data/postmaster.pid file
+postgresql 19:52:06.85 INFO  ==> Loading custom pre-init scripts...
+postgresql 19:52:06.90 INFO  ==> Initializing PostgreSQL database...
+postgresql 19:52:06.99 INFO  ==> pg_hba.conf file not detected. Generating it...
+postgresql 19:52:07.02 INFO  ==> Generating local authentication configuration
+postgresql 19:52:07.20 INFO  ==> Deploying PostgreSQL with persisted data...
+postgresql 19:52:07.71 INFO  ==> Configuring replication parameters
+postgresql 19:52:08.02 INFO  ==> Configuring fsync
+postgresql 19:52:08.14 INFO  ==> Configuring synchronous_replication
+postgresql 19:52:08.42 INFO  ==> Loading custom scripts...
+postgresql 19:52:08.45 INFO  ==> Enabling remote connections
+postgresql 19:52:08.57 INFO  ==> ** PostgreSQL setup finished! **
+
+postgresql 19:52:08.66 INFO  ==> ** Starting PostgreSQL **
+2024-01-12 19:52:09.002 GMT [1] LOG:  pgaudit extension initialized
+2024-01-12 19:52:09.061 GMT [1] LOG:  starting PostgreSQL 15.1 on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+2024-01-12 19:52:09.065 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-01-12 19:52:09.065 GMT [1] LOG:  listening on IPv6 address "::", port 5432
+2024-01-12 19:52:09.082 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-12 19:52:09.119 GMT [98] LOG:  database system was interrupted; last known up at 2024-01-12 18:03:34 GMT
+2024-01-12 19:52:11.549 GMT [106] FATAL:  the database system is starting up
+2024-01-12 19:52:12.725 GMT [98] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-12 19:52:12.739 GMT [98] LOG:  redo starts at 0/15665D8
+2024-01-12 19:52:12.739 GMT [98] LOG:  invalid record length at 0/15666C0: wanted 24, got 0
+2024-01-12 19:52:12.740 GMT [98] LOG:  redo done at 0/1566688 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-01-12 19:52:12.771 GMT [96] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-01-12 19:52:12.860 GMT [96] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.030 s, sync=0.010 s, total=0.110 s; sync files=2, longest=0.006 s, average=0.005 s; distance=0 kB, estimate=0 kB
+2024-01-12 19:52:12.915 GMT [1] LOG:  database system is ready to accept connections
